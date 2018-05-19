@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Student: Hieu So Course: IT331 -->
+        <title>Contact Page</title>
+       
+        <!-- Boostrap links -->
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+        
+        <!-- google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+       
+        <!-- awesome icon -->
+        <script defer="defer"  src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+      
+        <!-- google map -->
+        <script src="bootstrap/js/googlemap.js" ></script>
+        
+        <!-- own style -->
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/style.css">
+
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/style_contact.css">
+        <!-- trying to spread login js -->
+        <script src="bootstrap/js/storage.js" ></script>
+
+<style>
+</style>
+    </head>
+    <body>
+            <header>
+                    <nav class="navbar navbar-expand-md navbar-light bg-light">
+                        <a class="navbar-brand" href="index.html">
+                            <i class="fab fa-optin-monster fa-2x"></i>
+                        </a>
+                        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        <div class="collapse navbar-collapse text-danger" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+            
+                                <li class="nav-item active">
+                                    <a class="nav-link text-uppercase" href="index.html">Home</a>
+                                </li>
+            
+                                <li class="nav-item ">
+                                    <a class="nav-link text-dark text-uppercase" href="strategies.html">Strategies</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                        <a href="#" class=" nav-link text-dark text-uppercase dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item"><a class="nav-link text-dark text-uppercase" href="IT331.html">IT 331</a></li>
+                                                <li><a class="nav-link text-dark text-uppercase" href="#">IT 213</a></li>
+                                            </ul>
+                                       
+                                </li>
+            
+                                <li class="nav-item ">
+                                    <a class="nav-link text-dark text-uppercase" href="contactus.html">Contact Us</a>
+                                </li>
+            
+                                <li class="nav-item ">
+                                    <a class="nav-link text-dark text-uppercase" href="webmap.html">Web Map</a>
+                                </li>
+            
+                                <li class="nav-item ">
+                                    <a class="nav-link text-dark text-uppercase" href="references.html">References</a>
+                                </li>
+                                <li class="nav-item ">
+                                        <a class="nav-link text-dark text-uppercase" href="cms.html">CMS</a>
+                                </li>
+                            </ul>
+                            <form class="form-inline my-2 my-lg-0 px-2" >
+                                <input class="form-control btn-outline-danger mr-sm-2 btn-sm" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-danger my-2 mr-sm-0 btn-sm m-2" type="submit">Search</button>
+                                <button class="btn btn-outline-danger my-2 mr-sm-0 btn-sm m-2" type="button" id="loginID">Login/Register</button>
+                                <button class="btn btn-outline-danger my-2 mr-sm-0 btn-sm m-2" type="button" id="sigout">Sign out</button>
+                                <button class="btn btn-outline-danger my-2 mr-sm-0 btn-sm m-2" type="button" id="changename">Change Name:<span id="namecurrent"></span></button>
+                            </form>
+                        </div>
+                    </nav>
+                </header>
+        <div id="mainPage_contactUs">
+                    <!-- import google_map -->
+                    <div id="google_map">
+                        <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhPe8jrvoujhgnzSNxdF3VOf5neGbopFg&callback=initMap">
+                        </script>
+                    </div>
+                    
+                    <div class="form_contact">
+                        <div><h1 class="form_headlight">Contact Us</h1></div>
+                        <div>
+                            <form>
+                                    <input class="form_infor" type="text" placeholder="Email" id="email"><br>
+                                    <input class="form_infor" type="text" placeholder="Your Name" id="name"><br>
+                                    <input class="form_infor" type="text" placeholder="Your Words" id="comments"><br>
+                                    <button class="form_button" name="openSubmit" type="button" value ="Send To Us" data-toggle="button" aria-pressed="false">
+                                            Send to Us
+                                    </button>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        <footer>
+            <div class="footer">
+                <p>adsadsd</p>
+            </div>
+        </footer>
+
+        <!-- JQuery -->
+        <script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
+
+    </body>
+
+</html>
+

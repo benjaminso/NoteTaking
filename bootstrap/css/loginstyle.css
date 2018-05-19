@@ -1,0 +1,73 @@
+body {
+    background-color: white;
+    color: gray;
+    font-size: larger;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+}
+
+.form_access {
+    width: 30%;
+    height: 50%;
+    background-color:white;
+    border: 1px solid red;    
+    border-radius: 5%;
+    margin-top:2%;
+    
+}
+#Datepicker1{
+    width: 150px !important;
+}
+#form {
+    margin: auto;
+    display: block;
+    
+}
+
+#form {
+    margin: auto;
+    display: block;
+    padding-bottom: 10%;
+}
+#form input[type="text"],
+input[type="password"] {
+    width: 90%;
+    height: 20px;
+    padding-left:3%;
+    font-size: 25px;
+    padding-top: 0px;
+}
+.label {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 10%;
+    color: black;
+    font-weight: bold;
+}
+.style_text{
+    border:none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+.button_login_form{
+    margin-bottom:10%;
+    width: 90%;
+    outline: none;
+    border: none;
+    background-color: darkorange;
+    font-size: 30px;
+    padding: 10px 0 10px 0;
+}
+a{
+    color: red;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.form-group{
+    padding-top: 10px;
+}

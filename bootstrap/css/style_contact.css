@@ -1,0 +1,49 @@
+
+#mainPage_contactUs{
+    height: auto ;
+}
+ #google_map{
+    padding:10px 0 10px 0;
+   z-index: 100;
+   width: 100%;
+   height: 300px  ;
+}
+.form_contact{
+   width: 100%;
+   height: auto;
+   margin: auto;
+   margin-top: 20px;
+   text-align: center;
+}
+.form_headlight{
+   font-size: 50px;
+   letter-spacing: 2px;
+   font-weight: bold;
+   text-transform: uppercase;
+   font-family: 'Bitter';
+}
+.form_infor{
+   width: 50%;
+   border: none;
+   border-bottom: 1px gray solid;
+   padding: 10px;
+   letter-spacing: 2px;
+   margin: 10px;
+}
+.form_button{
+   font-size:20px;
+   text-transform: uppercase;
+   padding: 10px;
+   width: 50%;
+   background-color:gray;
+   border: none;
+}
+@media screen and (max-width: 768px) {
+   .form_infor, .form_button{
+       width: 100%;
+   }
+   .form_button{
+       margin-top: 20px;
+   }
+  
+}

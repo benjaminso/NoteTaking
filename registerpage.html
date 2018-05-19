@@ -1,0 +1,126 @@
+	<!doctype html>
+	<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<!-- Student: Hieu So
+					Course: IT 331 -->
+	<title>Register</title>
+	
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/loginstyle.css">
+	<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+	<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+	<link href="jQueryAssets/jquery.ui.datepicker.min.css" rel="stylesheet" type="text/css">
+	
+	<style>
+		
+	</style>
+	
+	<script src="bootstrap/js/register.js"></script>
+	
+	<script type="text/javascript">//	var j1102=jQuery.noConflict(true);</script>
+	</head>
+	<body>
+	<div class="form_access">
+	  <form id="form">
+		<label class="label">Username </label>
+		<br>
+		<input type="text" class="style_text" id="takename" required="required" >
+		<br>
+		<label class="label">Password</label>
+		<br>
+		<input type="password" class="style_text" name="pass_confirmation" data-validation="length" data-validation-length="min8">
+		<br>
+		<label class="label">Re-enter Password</label>
+		<br>
+		<input type="password" class="style_text" name="pass" data-validation="confirmation">
+		<br>
+		<label class="label" >Email</label>
+		<br>
+		<input type="text" data-validation="email" id="email-validation" class="style_text">
+		<br>
+		<div class="form-group" >
+		  <input type="radio" id="r1"  name="TypeofUser" value="MasonStudent">Mason Student
+		  <input type="radio" id="r2" name="TypeofUser" value="NotMasonStudent"> Not Mason Student<br>
+		</div>
+		<div>
+		 	DOB: <input type="text" id="Datepicker1">
+		</div>
+		<div id="hidden-div">School Name:
+		  <input id="name-school" type="text">
+		</div>
+	  </form>
+
+	  <!-- must setup something in here -->
+	  <input type="submit" id="createAccount" class="button_login_form" value="Login">
+	<div class="login_info"> 
+		  <span><a href="index.html">Go back to main page</a></span> 
+		  <span><a href="loginform.html">Already a member?</a></span> 
+	</div>
+	  
+	</div>
+		<!-- validation-->
+
+	<!--DatePicker-->
+	<script src="jQueryAssets/jquery-1.11.1.min.js"></script> 
+	<script src="jQueryAssets/jquery.ui-1.10.4.datepicker.min.js"></script> 
+	<script>
+		var j1104 = jQuery.noConflict(true);
+	</script> 
+	<script>
+
+			j1104(function() {
+				j1104( "#Datepicker1" ).datepicker({
+					showOn:"both",
+					numberOfMonths:1,
+					showAnim:"slideDown"
+				}); 
+			});
+		 </script>
+		 
+		 
+	<!--Ending datePicker-->
+	
+	<!--AutoComplete-->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="/resources/demos/style.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script> 
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+	<script>	var j1124=jQuery.noConflict(true);</script> 
+	<script>
+		/*Hidden and show the input for different school*/
+					j1124("#hidden-div").hide();
+
+					j1124("#r2").click(function(){
+						j1124("#hidden-div").show();
+					});
+
+					j1124("#r1").click(function(){
+						j1124("#hidden-div").hide();
+					});
+
+					j1124(function(){
+						var school=["UDM","VCU","VTech","GMU","NVCC"];
+						j1124("#name-school").autocomplete({
+							source:school
+						});
+					});
+
+
+	</script>
+	
+	<!--Ending AutoComplete-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+		<script>
+			var j1102 = jQuery.noConflict(true);
+		</script> 
+	<script>
+		j1102.validate({
+				
+		});
+		
+
+		</script>
+	 
+	</body>
+	</html>

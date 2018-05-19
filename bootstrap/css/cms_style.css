@@ -1,0 +1,48 @@
+.remove{
+    border:none;
+    -moz-user-focus: none;
+}
+#mainPage_Strategies {
+    height: 100% !important;
+}
+
+.images_references{
+    width: 200px;
+    height:  100px;
+}
+.firstline_references{
+    background-color: orange;
+}
+table{
+   width: 85%;
+   margin:auto;
+   
+}
+tr{
+   border-bottom: 2px dashed gray;
+}
+.modifiedDate_references{
+   font-size: 20px;
+   text-transform: uppercase;
+   text-align: center;
+}
+#boxes_cms{
+   display: flex;
+}
+#box1_cms{
+   flex:1;
+}
+#box2_cms{
+   flex:2;
+}
+@media screen and (max-width: 768px) {
+  table{
+      width: 100%;
+  }
+}
+.icon_logo{
+    text-decoration: none;
+    background-color: none;
+    color: none;
+    
+}

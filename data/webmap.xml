@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<pages>
+    <page>
+        <title>Home</title>
+        <link>index.html</link>
+    </page>
+        <page>
+        <title>Strategy</title>
+        <link>strategies.html</link>
+    </page>
+    <page>
+        <title>Contact Us</title>
+        <link>contactus.html</link>
+    </page>
+    <page>
+        <title>Web Map</title>
+        <link>webmap.html</link>
+    </page>
+    <page>
+        <title>References</title>
+        <link>references.html</link>
+    </page>
+    <page>
+        <title>CMS</title>
+        <link>cms.html</link>
+    </page>
+</pages>

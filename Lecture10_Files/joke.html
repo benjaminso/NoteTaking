@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Joke Example</title>
+<script>
+	var request;
+	function register(){
+		document.getElementById("fetch").addEventListener("click",function(){
+							retrievejoke("joke.txt");
+						},false);
+	}
+	
+	function retrievejoke(url){
+		try
+		{
+			request=new XMLHttpRequest();
+			if(request){
+				request.addEventListener("readystatechange",  stateChange, false);
+				request.open('GET', url, true);
+				request.send(null);	
+			}
+			
+		}catch(error){
+			alert(error.message);
+		}
+	}
+	function stateChange(){
+		if(request.readyState==4 && request.status==200){
+			document.getElementById("answer").innerHTML=request.responseText;
+		}
+	}
+	//request.send(null);
+	window.addEventListener("load",register,false);
+	
+</script>
+</head>
+
+<body>
+<h1>Why did a kid throw a clock out the window?</h1>
+<form>
+  <label>
+    <input type="button" name="fetch" id="fetch" value="Fetch Answer" />
+  </label>
+</form>
+
+<h1 id="answer"></h1>
+</body>
+</html>

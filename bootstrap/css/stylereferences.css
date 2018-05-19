@@ -1,0 +1,35 @@
+#mainPage_reference {
+    height: 100% !important;
+}
+
+.box_references {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-top: 20px;
+}
+.images_references{
+    width: 200px;
+    height:  100px;
+}
+.firstline_references{
+    background-color: orange;
+}
+table{
+   width: 85%;
+   margin:auto;
+   
+}
+tr{
+   border-bottom: 2px dashed gray;
+}
+.modifiedDate_references{
+   font-size: 20px;
+   text-transform: uppercase;
+   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  table{
+      width: 100%;
+  }
+}

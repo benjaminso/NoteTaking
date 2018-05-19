@@ -1,0 +1,30 @@
+{
+  "pages": {
+    "page": [
+      {
+        "title": "Home",
+        "link": "index.html"
+      },
+      {
+        "title": "strategy",
+        "link": "strategies.html"
+      },
+      {
+        "title": "Contact Us",
+        "link": "contactus.html"
+      },
+      {
+        "title": "web map",
+        "link": "webmap.html"
+      },
+      {
+        "title": "References",
+        "link": "references.html"
+      },
+      {
+        "title": "CMS",
+        "link": "cms.html"
+      }
+    ]
+  }
+}
